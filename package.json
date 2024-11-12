@@ -1,0 +1,15 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "Projeto para testes da SWAPI Star Wars",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Seu Nome",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "axios": "^1.0.0"
+  }
+}
