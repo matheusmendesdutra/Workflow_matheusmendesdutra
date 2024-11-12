@@ -1,4 +1,4 @@
-name: Teste SWAPI - Espécie
+name: Teste Espécie
 
 on: [push, pull_request]
 

@@ -1,30 +1,22 @@
-name: Teste Nave Específica
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+name: Teste nave especifica
+on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16'
 
-      - name: Install dependencies
-        run: |
-          npm install
+      - name: Instalar dependências
+        run: npm install
 
-      - name: Run test - Testando Nave Específica
-        run: |
-          jest --testNamePattern="Testando Nave Específica" --runInBand
+      - name: Teste para pessoa existente
+        run: npx jest -t "Retorna nave especifica"
+
